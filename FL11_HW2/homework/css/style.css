@@ -1,0 +1,226 @@
+@media print {
+  body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .tm-team-description-container {
+    text-align: center;
+    margin: auto;
+    max-width: 100%;  
+  }
+  .tm-sidebar,
+  .tm-team-img,
+  .boxes,
+  .tm-content-box>img,
+  .carousel-indicators,
+  #contact {
+    display: none;
+  }
+  .tm-main-content, .tm-content-box {
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    color: lightskyblue;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .heading ol, .heading li, .heading li a {
+    display: block;
+  }
+  ol>li:nth-child(odd) {
+    text-align: left;
+  }
+  ol>li:nth-child(even) {
+    text-align: right;
+  }
+  .heading ol {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 290px;
+    padding: 0;
+  }
+  .heading li a::first-letter {
+    color: lightskyblue;
+    font-size: 25px;
+  }
+  .heading ol li:nth-child(2n) {
+    text-align: right;
+  }
+}
+@media screen {
+  a, button {
+    transition: all .3s ease;
+  }
+  .tm-nav-item-link:hover {
+    background: rgba(0,0,0, .05);
+  }
+  .tm-main-nav {
+    box-shadow: 0 2px 5px 0 rgba(61, 55, 61, 0.7);
+  }
+  .tm-nav-item-link {
+    color: rgba(61, 55, 61, 0.7);
+  }
+  h2 + p {
+    font-style: italic;
+    text-indent: 1.5em;
+    line-height: 1.8em;
+  }
+  .flex-2-col:nth-child(1):before, .heading.tm-content-box:before, 
+  .tm-content-box.carousel:before, .blocks .tm-team-description-container:before,
+  #contact:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: lightskyblue;
+    transform: rotate(45deg) translate(-60px, 0px);
+    left: 0;
+    top: 0;
+  }
+  .tm-content-box {
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(61, 55, 61, 0.7);
+  }
+  .flex-2-col:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  .flex-2-col:nth-child(1) .tm-section-description:nth-child(3) {
+    text-indent: 1.5em;
+  }
+  @keyframes rotating {
+    0% {
+      transform: rotateX(0);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateX(0);
+    }
+  }
+  #home {
+    background: #76cdd7;
+  }
+  .tm-banner-inner {
+    background: #fff;
+  }
+  .tm-banner-text {
+    color: #76cdd7;
+    letter-spacing: 0.2em;
+    word-spacing: 0.4em;
+    text-shadow: 0px 8px 1px rgba(118, 205, 215, .5), 0px 3px 1px rgba(118, 205, 215, .5);
+    animation: rotating 3s linear infinite;
+  }
+  .blocks li p {
+    font-style: italic;
+    opacity: .9;
+  }
+  .blocks li p::first-letter {
+    font-size: 30px;
+  }
+  .blocks li {
+    padding: 10px;
+  }
+  .blocks li:nth-child(2n) {
+    background: rgba(0,0,0,.05);
+  }
+  #about .boxes h2:hover {
+    color: #fff;
+    background: lightskyblue;
+  }
+  #about .boxes h2:hover {
+    box-shadow: 0 2px 5px 0 rgba(61, 55, 61, 0.7);
+  }
+  #about, #about .boxes h2 {
+    transition: all .3s ease;
+    cursor: default;
+  }
+  .heading.tm-content-box h2 {
+    text-align: center;
+    color: lightskyblue;
+  }
+  .heading.tm-content-box ol {
+    list-style-type: lower-roman;
+  }
+  .heading.tm-content-box ol a {
+    color: #000;
+    border-left: 4px solid transparent;
+    padding-left: 3px;
+  }
+  .heading.tm-content-box ol a:hover {
+    color: #ffb347;
+    border-color: #ffb347;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .heading.tm-content-box ol a:visited {
+    color: #ffb347;
+  }
+  .text {
+    position: relative;
+  }
+  .text:after {
+    content: 'New';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+    color: red;
+    opacity: 0.7;
+    margin-right: -20px;
+    margin-top: 0px;
+    font-variant: petite-caps;
+    font-size: 10px;
+  }
+  .blocks .tm-team-description-container {
+    position: relative;
+    overflow: hidden;
+  }
+  button[type="submit"] {
+    background: #fff;
+    color: lightskyblue;
+    border: 2px solid lightskyblue;
+    border-radius: 0;
+    margin-left: auto;
+    display: block;
+    padding: 12px 0;
+    width: 150px;
+  }
+  button[type="submit"]:hover {
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+  }  
+  #contact {
+    position: relative;
+    overflow: hidden;
+  }
+  #contact input, #contact textarea {
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .form-group:nth-child(2) {
+    position: relative;
+  }
+  .form-group:nth-child(2) input {
+    background: #fff url(../img/email-icon.png) no-repeat 99.5% center;
+    background-size: 5.5%;
+    padding-right: 30px;
+  }
+  #contact input:focus, #contact textarea:focus {
+    background-color: lightskyblue;
+    color: #fff;
+  }
+  #contact input::placeholder, #contact textarea::placeholder {
+    transition: all .3s ease;
+  }
+  #contact input:focus::placeholder, #contact textarea:focus::placeholder {
+    color: #fff;
+  }
+}
